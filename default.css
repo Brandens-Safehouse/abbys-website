@@ -1,0 +1,77 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+body {
+  letter-spacing: 0;
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(90deg, #006cc5, #e8e895);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-weight: 700;
+  text-align:center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 12px;
+  margin: 0px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  padding: 15px 25px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+  font-size: 48px;
+  text-align: center;
+  font-family: math;
+  color: rgb(255, 255, 255);
+}
+
+input, textarea {
+  font-weight: 700;
+  border-radius: 50px;
+  width: 100%;
+  padding: 40px;
+  margin: 12px;
+  border-width: 4px;
+  font-size: 25px;
+  color: black;
+  font-style: italic;
+  font-family: 'Mulled Wine Season', sans-serif;
+}
+
+.page-container {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 768px) {
+  .page-container {max-width: 1024px;}
+}
+
+@media (min-width: 1025px) {
+  .page-container {max-width: 2360px;}
+}
+

@@ -1,0 +1,511 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #6b4d7a;
+}
+
+ul {
+list-style: none;
+} 
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 150px;
+}
+
+ul li.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  display: none;
+}
+
+ul li a:hover {
+  background-color: #412e4a;
+
+}
+
+ul li:hover ul.dropdown {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 150px;
+  border-radius: 0 0 15px 15px;
+}
+
+ul li h3 {
+  color: black;
+  text-align: center;
+}
+
+ul li h3:hover {
+  color: white;
+}
+
+ul li:hover ul li.dropdown-radius a {
+  border-radius: 0 0 15px 15px;
+}
+
+.nav-list{
+  justify-content: end;
+  align-items:center;
+  font-size: 20px;
+}
+
+.links {
+  padding: 0px 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+.right-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.mission {
+  background-image: linear-gradient(90deg, #006cc5, #e8e895);
+}
+
+.origin {
+  background-image: linear-gradient(#006cc5, #bb6e02ed);
+}
+
+.book {
+  background-image: linear-gradient(#006cc5,#bb6e02ed, #7b0004);
+}
+
+.games {
+  background-image: linear-gradient(#211ec9, #c577fd, #9200e0);
+}
+
+.vision-squares:hover {
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+button a h2:hover {
+  color: black;
+  text-transform: uppercase;
+}
+
+/*About page*/
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
+}
+
+.paragraph p {
+  padding: 20px 0;
+}
+
+.paragraph {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 50px;
+}
+
+.about-layout img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.gallery-header h2 {
+  color: black;
+    font-size: 100px;
+    padding: 50px 0px;
+}
+
+/*Mission and Vision*/
+
+.mission-nav-color {
+  
+}
+
+.mission-vision {
+  display: flex;
+  flex-direction: column;
+}
+
+.vision h2 {
+  color: black;
+  padding-bottom: 30px;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: serif;
+}
+
+.vision p{
+  padding-bottom: 20px;
+}
+
+.vision {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 50px;
+ 
+}
+
+.mission-section {
+
+}
+
+.vision-section {
+  
+}
+
+/*Brandons-bookhouse css*/
+
+.signup h3 {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  margin-left: 5%;
+  margin-top: 1%;
+  font-size: 40px;
+}
+
+.signup h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mulled Wine Season', sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.bookhouse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+body {
+  background-image: linear-gradient(#211ec9, #c577fd, #9200e0);
+}
+
+.image-form-container {
+display: flex;
+}
+
+.recource-logo {
+  width: 100%;
+}
+
+.section-one-bb p{
+  font-size: 23px;
+  font-weight: 600;
+  font-family: 'mulled wine season';
+  padding-bottom: 10px;
+}
+
+.recource-left {
+  padding: 20px;
+}
+
+.form-size {
+  height: 55px;
+  border-radius: 35px;
+}
+
+.recource-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-two {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Board Games*/
+
+.game-section {
+  font-weight: 700;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 70px;
+  margin-top: 50px;
+}
+
+.game-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.game-form label input {
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.game-header {
+  font-size: 24px;
+  text-align: center;
+  padding: 30px;
+}
+
+.game-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-middle p {
+  font-size: 38px;
+  color: yellow;
+  text-align: center;
+  font-weight: 900;
+}
+
+.game-middle h2 {
+  color: black;
+}
+
+.text-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+    top: 64%;
+    left: 30%;
+    transform: translate(-50px, -50px);
+    font-size: 35px;
+}
+
+/*Past Events*/
+
+.past-header {
+  text-align: center;
+}
+
+.past-events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.backpack, .two-women, .video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backpack h2, .two-women h2, .video h2 {
+  padding: 20px;
+  font-size: 30px;
+  color: black;
+  font-weight: 800;
+}
+
+.backpack p, .two-women p, .video p {
+  font-size: 31px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.backpack {
+  width: 75%;
+  margin-top: 21%;
+}
+
+.holiday {
+  background-color: black;
+  margin-top: 5%;
+}
+
+/*Support*/
+
+.support-nav-color {
+  background-color: transparent;
+}
+
+.support-nav-list {
+  display: flex;
+}
+
+.support-nav-list li h3 {
+  color: white;
+}
+
+.support-nav-list:hover {
+  color: transparent;
+}
+
+.support-nav-list li a:hover {
+  background-color: black;
+}
+
+.support-nav-list li:hover ul.dropdown {
+  background-color: black;
+}
+
+.contact-nav {
+  border: 2px solid white;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.contact-nav a:hover {
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.support {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-text span {
+  display: flex;
+  gap: 5px;
+  color: yellow;
+  margin-left: 35px;
+}
+
+.first-h3 {
+  font-family: system-ui;
+}
+
+.second-h3 {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.orange-background {
+  background-image: linear-gradient(90deg, #ff3c00, #f99978c7);
+}
+
+.header-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
+}
+
+.support-header {
+  color: yellow;
+  font-size: 140px;
+  font-family: serif;
+}
+
+.form-details {
+  border: 2px solid black;
+  width: 80%;
+  border-radius: 20px;
+  background-image: linear-gradient(-1deg, #ffc775, #f1974d, #ffc775,#f1974d, transparent);
+  padding: 40px;
+}
+
+.form-style {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.support-labels {
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.support-input {
+  padding-top: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #a9a9a994;
+  border-radius: 0;
+  padding-bottom: 5px;
+}
+
+.support-message {
+  padding-top: 60px;
+}
+
+::placeholder {
+  color: #a9a9a994;
+  font-weight: 200;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+}
+
+.support-submit {
+  border: 1px solid black;
+  padding: 20px 35px;
+  font-size: 20px;
+  display: flex;
+  justify-self: end;
+}
+
+/*Donate Section*/
+
+.donate-section-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.donate-words{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.donate-section-one div h1 {
+  font-size: 50px;
+  font-family: math;
+  padding: 40px 0;
+}
+
+.donate-image {
+  width: 75%;
+}
+
+.donate-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.donate-items hr {
+  width: 60px;
+}
+
+.dman {
+  
+}
+

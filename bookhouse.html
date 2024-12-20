@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/default.css">
+  <link href="https://fonts.cdnfonts.com/css/mulled-wine-season" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar mission-nav-color">
+    <ul class="nav-list page-container">
+      <li><a href="/index.html"><h3>Home</h3></a></li>
+      <li>
+        <a href="#"><h3>Events</h3></a>
+        <ul class="nav-list dropdown">
+          <li><a href="/past-events.html"><h3>Past Events</h3></a></li>
+          <li class="dropdown-radius"><a href="/events.html"><h3>Upcoming Events</h3></a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><h3>Support</h3></a>
+        <ul class="nav-list dropdown">
+          <li><a href="/support.html"><h3>Volunteer</h3></a></li>
+          <li><a href="/donate.html"><h3>Donate</h3></a></li>
+          <li class="dropdown-radius"><a href="#"><h3>Contact</h3></a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="signup">
+    <div class="bookhouse-label">
+      <h3>Branden's Bookhouse</h3>
+    </div>
+    <div class="bookhouse-label">
+      <h1>Recource Signup</h1>
+    </div>
+  </div>
+
+  <div class="bookhouse page-container">
+    <div class="image-form-container">
+      <div class="recource-logo">
+        <img src="/images/[Original size] BRANDEN’s Safehouse (1).svg" alt="Branden's logo">
+      </div>
+      <section class="section-one-bb">
+        <form class="recource-left" action="" method="post">
+          <label for="firstName"><input id="firstName" type="text" placeholder="Name" class="form-size"></label>
+          <label for="email"><input id="email" type="email" placeholder="E-mail" class="form-size"></label><br>
+          <label for="birthday"><input type="date" placeholder="Birthday" class="form-size"></label>
+        </form>
+        <p>Our Mission is to Empower the next generation with confidence, community, and the ability to follow their dreams.
+           By providing them safety, time, love, attention, and resources.</p>
+        <p>Please use empty box to include any details on the resources you need.</p> 
+        <p>We have books and self-care items available, tools and classes can be found or provided upon request if available.</p>
+        <p>Recreational reading- Books for all ages, races, and genders that they can relate to.
+          Items needed for education: Books, Electronics, Trade tools, and tutoring.</p>
+      </section>
+    </div>
+    <section>
+      <form class="recource-right">
+        <div class="form-two">
+          <label for="grade-job"><input class="area-one" id="grade-job" type="text" placeholder="Grade/Job"></label>
+          <label for="parent-gaurdian"><input class="area-two" id="parent-gaurdian" type="text" placeholder="Parent/Guardian"></label>
+        </div>
+          <label for="address"><input class="area-three" id="address" type="address" placeholder="Mailing Address for books and tools"></label>
+        <div class="form-two">
+          <label for="phone-number">
+            <input class="area-four" id="phone-number" 
+              type="tel" 
+              placeholder="Phone #"
+              pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+              type="text"
+            >
+          </label>
+          <label for="book-tool-class">
+            <input 
+            class="area-five" 
+            id="book-tool-class" 
+            type="text"
+            placeholder="Book, Tool, Class"
+            >
+          </label>  
+        </div>
+        <textarea name="comments" id="comments" rows="14"></textarea>
+      </form>
+    </section>
+  </div>
+
+</body>

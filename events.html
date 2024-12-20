@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/default.css">
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <ul class="nav-list page-container">
+      <li><a href="/index.html"><h3>Home</h3></a></li>
+      <li>
+        <a href="/events.html"><h3>Events</h3></a>
+        <ul class="nav-list dropdown">
+          <li><a href="/events.html"><h3>Past Events</h3></a></li>
+          <li class="dropdown-radius"><a href="#"><h3>Upcoming Events</h3></a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><h3>Support</h3></a>
+        <ul class="nav-list dropdown">
+          <li><a href="/support.html"><h3>Volunteer</h3></a></li>
+          <li><a href="/donate.html"><h3>Donate</h3></a></li>
+          <li class="dropdown-radius"><a href="#"><h3>Contact</h3></a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="filter">
+    <input id="all" type="checkbox" />
+    <input id="number" type="checkbox" />
+    <input id="letter" type="checkbox" />
+    <input id="red" type="checkbox" />
+    <input id="blue" type="checkbox" />
+    <input id="green" type="checkbox" />
+    <input id="border" type="checkbox" />
+    
+    <div class="filter__control">
+      <h3>Filter</h3>
+      <label class="filter__button" for="all">All</label>
+      <label class="filter__button" for="number">Number</label>
+      <label class="filter__button" for="letter">Letter</label>
+      <label class="filter__button" for="red">Red</label>
+      <label class="filter__button" for="blue">Blue</label>
+      <label class="filter__button" for="green">Green</label>
+      <label class="filter__button" for="border">Bodered</label>
+    </div>
+    
+    <div class="filter__content">
+      <ul class="filter__list">
+        <li class="filter__item" data-filter="red letter"><span>A</span></li>
+        <li class="filter__item" data-filter="red number border"><span>2</span></li>
+        <li class="filter__item" data-filter="green number"><span>9</span></li>
+        <li class="filter__item" data-filter="blue letter border"><span>G</span></li>
+        <li class="filter__item" data-filter="blue letter"><span>H</span></li>
+        <li class="filter__item" data-filter="red number"><span>0</span></li>
+        <li class="filter__item" data-filter="green letter border"><span>D</span></li>
+        <li class="filter__item" data-filter="blue letter"><span>P</span></li>
+        <li class="filter__item" data-filter="red letter"><span>Q</span></li>
+        <li class="filter__item" data-filter="blue number"><span>9</span></li>
+      </ul>
+    </div>
+  </div>
+
+
+</body>
