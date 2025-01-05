@@ -354,6 +354,7 @@ display: flex;
 
 .support-nav-color {
   background-color: transparent;
+  margin-top: 20px;
 }
 
 .support-nav-list {
@@ -476,8 +477,8 @@ display: flex;
 /*Donate Section*/
 
 .donate-section-one {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  gap: 40px;
 }
 
 .donate-words{
@@ -490,22 +491,105 @@ display: flex;
   font-size: 50px;
   font-family: math;
   padding: 40px 0;
+  font-weight: 300;
 }
 
 .donate-image {
+  width: 55%;
+}
+
+.horizontal-msg div hr {
+  width: 400px;
+  border: 1px solid black;
+}
+
+.msg-style h2 {
+  color: black;
+  font-weight: 600;
+}
+
+.horizontal-msg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate-section-two div img {
   width: 75%;
 }
 
+.donate-section-three, .donate-section-two, .clip-art {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.clip-art {
+  row-gap: 30px;
+}
+
 .donate-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.items-items {
+padding: 50px 0;
+margin-right: 25px;
+}
+
+.text-items, .text-items-one {
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 53px;
+  padding: 35px;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: 'circular';
+}
+
+.text-items-one {
+  margin-bottom: 25px;
+}
+
+.donate-section-three div img {
+  width: 50%;
+}
+
+.section-three-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -48px;
+}
+
+.clip-art-clips {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 35px;
+}
+
+.clip-art-clips-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.section-three-two {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: -20%;
 }
 
-.donate-items hr {
-  width: 60px;
+.section-three-two p {
+  align-self: center;
+  font-size: 37px;
 }
 
-.dman {
-  
+.body-donate {
+  background-image: linear-gradient(90deg, #f8ff58, #d2a55a, #b57100);
 }
-
