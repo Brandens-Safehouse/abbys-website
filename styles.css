@@ -4,16 +4,12 @@
   background-color: #6b4d7a;
 }
 
-ul {
-list-style: none;
-} 
-
-ul li {
+.navbar ul li {
   display: inline-block;
   position: relative;
 }
 
-ul li a {
+.navbar ul li a {
   display: block;
   padding: 20px 20px;
   color: white;
@@ -22,23 +18,23 @@ ul li a {
   width: 150px;
 }
 
-ul li.dropdown li {
+.navbar ul li.dropdown li {
   display: block;
 }
 
-ul li ul.dropdown {
+.navbar ul li ul.dropdown {
   width: 100%;
   position: absolute;
   z-index: 100;
   display: none;
 }
 
-ul li a:hover {
+.navbar ul li a:hover {
   background-color: #412e4a;
 
 }
 
-ul li:hover ul.dropdown {
+.navbar ul li:hover ul.dropdown {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -46,16 +42,16 @@ ul li:hover ul.dropdown {
   border-radius: 0 0 15px 15px;
 }
 
-ul li h3 {
+.navbar ul li h3 {
   color: black;
   text-align: center;
 }
 
-ul li h3:hover {
+.navbar ul li h3:hover {
   color: white;
 }
 
-ul li:hover ul li.dropdown-radius a {
+.navbar ul li:hover ul li.dropdown-radius a {
   border-radius: 0 0 15px 15px;
 }
 
@@ -136,15 +132,11 @@ button a h2:hover {
 
 .gallery-header h2 {
   color: black;
-    font-size: 100px;
-    padding: 50px 0px;
+  font-size: 100px;
+  padding: 50px 0px;
 }
 
 /*Mission and Vision*/
-
-.mission-nav-color {
-  
-}
 
 .mission-vision {
   display: flex;
@@ -171,14 +163,6 @@ button a h2:hover {
  
 }
 
-.mission-section {
-
-}
-
-.vision-section {
-  
-}
-
 /*Brandons-bookhouse css*/
 
 .signup h3 {
@@ -203,8 +187,10 @@ button a h2:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-body {
-  background-image: linear-gradient(#211ec9, #c577fd, #9200e0);
+.bookhouse ::placeholder {
+  color: black;
+  font-weight: 700;
+  font-family: 'Mulled Wine Season', sans-serif;
 }
 
 .image-form-container {
@@ -235,6 +221,7 @@ display: flex;
   display: flex;
   flex-direction: column;
 }
+
 
 .form-two {
   display: grid;
@@ -460,7 +447,7 @@ display: flex;
 }
 
 ::placeholder {
-  color: #a9a9a994;
+  color: #4343439f;
   font-weight: 200;
   font-family: 'Times New Roman', Times, serif;
   font-style: normal;
@@ -592,4 +579,243 @@ margin-right: 25px;
 
 .body-donate {
   background-image: linear-gradient(90deg, #f8ff58, #d2a55a, #b57100);
+}
+
+/*Sponsorships Section*/
+
+.sponsor-body {
+  background-image: linear-gradient(180deg, #383fff 12%, #b561ad 59%, #6200a3 139%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.sponsor {
+  position: relative;
+}
+
+.sponsor-img img{
+  width: 25%;
+  position: absolute;
+}
+
+.sponsor-title {
+  text-align: center;
+  font-size: 80px;
+  padding-top: 150px;
+  font-family: math;
+}
+
+.sponsor-two {
+  display: flex;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.package {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.sponsor-font {
+  background-color: black;
+}
+
+.sponsor-bot-box {
+  border: 5px solid black;
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+}
+
+.sponsor-bot-box p {
+  font-size: 120px;
+  font-weight: 900;
+  font-family: fantasy;
+  text-align: center;
+}
+
+.sponsor-bot-box ul li {
+  padding-top: 35px;
+  font-size: 24px;
+}
+
+/*Contact*/
+
+.contact-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Host Grotesk", serif;
+}
+
+.contact-nav-color {
+  margin-right: 20%;
+}
+
+.contact-nav-color {
+  background-color: transparent;
+}
+
+.contact-nav-color  ul li:hover ul.dropdown{
+  background-color: transparent;
+}
+.contact-nav-color  ul li a:hover{
+  background-color: transparent;
+}
+
+.contact-nav-color, .contact-nav-color  ul li h3 {
+  color: white;
+}
+
+.contact-nav-color ul li a :hover {
+  background: transparent;
+  font-weight: 900;
+  color:#9b008b;
+}
+
+.contact-logo-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-logo-container img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 13%;
+}
+
+.contact-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 14%;
+  font-family: "Host Grotesk", serif;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  gap: 17px;
+  margin-right: 12%;
+}
+
+.contact-form div h1 {
+  margin: 20px 0px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 75px;
+  font-weight: 900;
+}
+
+.contact-form input {
+  border-radius: 10px;
+  border-width: 2px;
+  font-size: 20px;
+  padding: 28px;
+  margin-left: 0px;
+}
+
+.contact-form textarea {
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 0px;
+  margin-left: 0px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form-middle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-button {
+  width: 33%;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  background-image: linear-gradient(90deg, #5b00c9, hsl(258deg 100% 63.18%));
+  border: 2px solid black;
+  color: white;
+}
+
+.contact-section-two {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.contact-section-two h2 {
+  font-size: 80px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contact-section-two .contact-text img {
+  width: 10%;
+  padding-left: 15px;
+  position: absolute;
+  top: -60%;
+  right: 56%;
+}
+
+.icons {
+  background-image: linear-gradient(90deg, #01ba92, #01b992);
+  border-radius: 25px;
+  padding: 10px;
+  border: solid black 2px;
+  color: white;
+  font-size: 24px;
+}
+
+.icon-text {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.icon-section p {
+  font-size: 28px;
+  margin-bottom: 10%;
+}
+
+.contact-text span {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.us-color {
+  color: #30c5c9;
 }
