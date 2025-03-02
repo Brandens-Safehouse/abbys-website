@@ -130,7 +130,15 @@ button a h2:hover {
   width: 50%;
 }
 
-.gallery-header h2 {
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+}
+
+.about-layout .gallery-header h2 {
   color: black;
   font-size: 100px;
   padding: 50px 0px;
@@ -293,6 +301,15 @@ display: flex;
     font-size: 35px;
 }
 
+.games-submit {
+  border: 1px solid black;
+}
+
+.games-submit:hover {
+  background-color:#383fff;
+  color: white;
+}
+
 /*Past Events*/
 
 .past-header {
@@ -447,8 +464,8 @@ display: flex;
 }
 
 ::placeholder {
-  color: #4343439f;
-  font-weight: 200;
+  color: #14343439;
+  font-weight:200;
   font-family: 'Times New Roman', Times, serif;
   font-style: normal;
 }
@@ -539,6 +556,10 @@ margin-right: 25px;
   margin-bottom: 25px;
 }
 
+.donate-section-three {
+  position: relative;
+}
+
 .donate-section-three div img {
   width: 50%;
 }
@@ -589,6 +610,7 @@ margin-right: 25px;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
 }
 
 .sponsor {
@@ -605,6 +627,11 @@ margin-right: 25px;
   font-size: 80px;
   padding-top: 150px;
   font-family: math;
+}
+
+.sponsor-title h3 {
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .sponsor-two {
@@ -629,9 +656,12 @@ margin-right: 25px;
   margin-top: 20px;
   padding-top: 40px;
   padding-bottom: 100px;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sponsor-bot-box p {
@@ -644,6 +674,24 @@ margin-right: 25px;
 .sponsor-bot-box ul li {
   padding-top: 35px;
   font-size: 24px;
+}
+
+.venmo-cash-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.qr-codes {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 12.5%;
+  margin-top: -13%;
 }
 
 /*Contact*/
@@ -661,6 +709,10 @@ margin-right: 25px;
 
 .contact-nav-color {
   background-color: transparent;
+}
+
+.contact-nav-color  ul li a {
+  padding: 10px 10px;
 }
 
 .contact-nav-color  ul li:hover ul.dropdown{
@@ -818,4 +870,54 @@ margin-right: 25px;
 
 .us-color {
   color: #30c5c9;
+}
+
+/*footer*/
+
+footer {
+  background-image: linear-gradient(48deg, black, #00000082);
+  margin-top: 5%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  background-image: linear-gradient(48deg, black, #00000082);
+}
+
+.footer-container hr {
+  width: 100%;
+}
+
+.facebook-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.facebook-footer h2 {
+  font-size: 30px;
+  padding: 20px 10px;
+}
+
+.facebook-footer a:hover {
+  color: #006cc5;
+}
+
+.copyright-footer {
+  font-size: 18px;
+  color: #a9a9a9;
+  padding-top: 10px;
+}
+
+.mission-footer, .support-container, .contact-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
