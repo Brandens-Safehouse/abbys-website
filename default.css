@@ -82,6 +82,11 @@ input, textarea {
     bottom: 0;
   }
 
+  .qr-codes {
+    margin-left: -3.5%;
+    margin-top: -18%;
+  }
+
 }
 
 @media all and (max-width: 1200px) {
