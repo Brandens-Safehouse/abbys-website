@@ -55,6 +55,74 @@
   border-radius: 0 0 15px 15px;
 }
 
+.topnav {
+  background-color:#6b4d7a;
+  overflow: hidden;
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a h3, .dropdown .dropbtn {
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+font-weight: 600;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover {
+  background-color:#412e4a;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .nav-list{
   justify-content: end;
   align-items:center;
@@ -109,6 +177,7 @@ button a h2:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 40px;
+  min-height: 100vh;
 }
 
 .paragraph p {
@@ -877,6 +946,11 @@ margin-right: 25px;
 footer {
   background-image: linear-gradient(48deg, black, #00000082);
   margin-top: 5%;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-height: 15vh;
 }
 
 .footer-container {
@@ -914,10 +988,4 @@ footer {
   font-size: 18px;
   color: #a9a9a9;
   padding-top: 10px;
-}
-
-.mission-footer, .support-container, .contact-container {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
 }

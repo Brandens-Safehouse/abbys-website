@@ -30,7 +30,30 @@
         </li>
       </ul>
     </nav>
-  
+    <div class="topnav" id="myTopnav">
+      <a href="/index.html" class="active"><h3>Home</h3></a>
+      <div class="dropdown">
+        <button class="dropbtn">Events
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/events.html">Events</a>
+          <a href="/past-events.html">Past Events</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Support
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/support.html">Volunteer</a>
+          <a href="/donate.html">Donate</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/sponsorships.html">Sponsorship</a>
+        </div>
+      </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
     <div class="game-header page-container">
       <h1>We Host board games & arts Birthday party? Corporate event? Block party? We cater to all ages of kids and adults!
         Book early!</h1>
@@ -77,6 +100,18 @@
 
 
   <script src="https://kit.fontawesome.com/3f6e3b3cfe.js" crossorigin="anonymous"></script>
+  <script>
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+  </script>
+
+
 
 
   </body>

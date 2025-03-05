@@ -70,14 +70,140 @@ input, textarea {
   margin-right: auto;
 }
 
-
-@media (min-width: 768px) {
-  .page-container {max-width: 1024px;}
+@media all and (max-width: 2519px) {
 
   
 }
 
-@media (min-width: 1025px) {
-  .page-container {max-width: 2360px;}
+@media all and (max-width: 1620px) {
+  .index-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
 }
+
+@media all and (max-width: 1200px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 40%;
+  }
+
+  .right-section {
+    justify-items: center;
+  }
+
+  .vision-squares {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 275px;
+  }
+
+  .index-container {
+    position: static;
+  }
+
+  .paragraph p {
+    font-size: 20px;
+  }
+
+  .paragraph h2 {
+    font-size: 40px;
+  }
+
+  .mobile-page-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media all and (max-width:1100px) {
+  .vision-squares a h2 {
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: black;
+    border-radius: 0px;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section {
+    width: 65%;
+  }
+
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    }
+    
+  .about-layout {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #gallery {
+    width: 100%;
+  }
+
+}
+
+
+
+
 
