@@ -306,6 +306,10 @@ display: flex;
   grid-template-columns: 1fr 1fr;
 }
 
+.mobile-bookhouse {
+  display: none;
+}
+
 /*Board Games*/
 
 .game-section {

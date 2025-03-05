@@ -132,12 +132,18 @@ input, textarea {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+  input {
+    font-size: 17px;
+    padding: 30px;
+  }
 }
 
 @media all and (max-width:1100px) {
   .vision-squares a h2 {
     font-size: 35px;
   }
+
 }
 
 @media all and (max-width: 768px) {
@@ -204,6 +210,19 @@ input, textarea {
 
   #gallery {
     width: 100%;
+  }
+
+  .mobile-bookhouse {
+    display: flex;
+  }
+
+  .desktop-bookhouse {
+    display: none;
+  }
+
+  .image-form-container, .bookhouse, .section-one-bb {
+    display: flex;
+    flex-direction: column;
   }
 
 }
