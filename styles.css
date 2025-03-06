@@ -168,7 +168,6 @@ font-weight: 600;
 
 button a h2:hover {
   color: black;
-  text-transform: uppercase;
 }
 
 /*About page*/
@@ -950,11 +949,6 @@ margin-right: 25px;
 footer {
   background-image: linear-gradient(48deg, black, #00000082);
   margin-top: 5%;
-  position: relative;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  min-height: 15vh;
 }
 
 .footer-container {
