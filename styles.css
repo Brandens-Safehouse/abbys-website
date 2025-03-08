@@ -424,6 +424,12 @@ display: flex;
 .holiday {
   background-color: black;
   margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /*Support*/
@@ -682,7 +688,7 @@ margin-right: 25px;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
+  min-height: 100vh;
 }
 
 .sponsor {

@@ -95,6 +95,9 @@ input, textarea {
     margin-top: -18%;
   }
 
+  /*Past Events*/
+
+  
 
 }
 
@@ -153,6 +156,13 @@ input, textarea {
   .contact-form {
     font-size: 21px;
   }
+
+  .contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
 }
 
 @media all and (max-width:1100px) {
@@ -164,6 +174,11 @@ input, textarea {
   .game-middle p {
     margin-top: 70px;
   }
+
+  .contact-sections {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -174,6 +189,7 @@ input, textarea {
 
   .topnav {
     display: block;
+    overflow: visible;
   }
 
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -271,6 +287,15 @@ input, textarea {
     font-size: 20px;
   }
 
+  /*contact*/ 
+
+
+}
+
+@media all and (max-width: 420px) {
+  .facebook-footer h2 {
+    font-size: 20px;
+  }
 }
 
 
