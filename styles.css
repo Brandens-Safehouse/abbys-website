@@ -389,11 +389,16 @@ display: flex;
 }
 
 .past-events {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 30px;
+}
+
+.past-section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .backpack, .two-women, .video {
@@ -581,7 +586,6 @@ display: flex;
 }
 
 .horizontal-msg div hr {
-  width: 400px;
   border: 1px solid black;
 }
 
@@ -591,8 +595,8 @@ display: flex;
 }
 
 .horizontal-msg {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
 }
@@ -624,7 +628,7 @@ margin-right: 25px;
   border: 2px solid black;
   text-align: center;
   border-radius: 53px;
-  padding: 35px;
+  padding: 30px 0px;
   font-size: 26px;
   font-weight: 400;
   font-family: 'circular';
@@ -632,10 +636,6 @@ margin-right: 25px;
 
 .text-items-one {
   margin-bottom: 25px;
-}
-
-.donate-section-three {
-  position: relative;
 }
 
 .donate-section-three div img {
@@ -678,6 +678,8 @@ margin-right: 25px;
 
 .body-donate {
   background-image: linear-gradient(90deg, #f8ff58, #d2a55a, #b57100);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*Sponsorships Section*/
@@ -702,13 +704,13 @@ margin-right: 25px;
 
 .sponsor-title {
   text-align: center;
-  font-size: 80px;
-  padding-top: 150px;
+  font-size: 4vw;
+  padding-top: 15vh;
   font-family: math;
 }
 
 .sponsor-title h3 {
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: 400;
 }
 
@@ -722,36 +724,41 @@ margin-right: 25px;
 .package {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 1vw;
 }
 
 .sponsor-font {
   background-color: black;
+  font-size: 4vh;
+}
+
+.sponsor-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .sponsor-bot-box {
   border: 5px solid black;
-  margin-top: 20px;
-  padding-top: 40px;
-  padding-bottom: 100px;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: fit-content;
+  margin-top: 2vh;
+  padding-top: 3vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 6vh;
 }
 
 .sponsor-bot-box p {
-  font-size: 120px;
+  font-size: 12vh;
   font-weight: 900;
   font-family: fantasy;
   text-align: center;
 }
 
 .sponsor-bot-box ul li {
-  padding-top: 35px;
-  font-size: 24px;
+  padding-top: 4vh;
+  font-size: 2.6vh;
 }
 
 .venmo-cash-app {
@@ -764,12 +771,10 @@ margin-right: 25px;
 
 .qr-codes {
   display: flex;
-  flex-direction: row;
-  gap: 100px;
+  flex-direction: column;
+  gap: 1vh;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 12.5%;
-  margin-top: -13%;
 }
 
 /*Contact*/
@@ -892,7 +897,6 @@ margin-right: 25px;
 .contact-section-two {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
 }
 
@@ -902,17 +906,14 @@ margin-right: 25px;
 
 .contact-text {
   display: flex;
-  flex-direction: row;
-  position: relative;
+  flex-direction: row-reverse;
   margin-bottom: 20px;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .contact-section-two .contact-text img {
-  width: 10%;
   padding-left: 15px;
-  position: absolute;
-  top: -60%;
-  right: 56%;
 }
 
 .icons {
