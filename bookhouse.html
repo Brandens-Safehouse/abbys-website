@@ -74,10 +74,10 @@
         <img src="/images/[Original size] BRANDEN’s Safehouse (1).svg" alt="Branden's logo">
       </div>
       <section class="section-one-bb">
-        <form class="recource-left" action="/action_page.php" method="post" netlify>
-          <label for="firstName"><input id="firstName" type="text" placeholder="Name" class="form-size"></label>
-          <label for="email"><input id="email" type="email" placeholder="E-mail" class="form-size"></label><br>
-          <label for="birthday"><input type="date" placeholder="Birthday" class="form-size" onfocus="(this.type='date')" onblur="(this.type='text')"></label>
+        <form class="recource-left" method="post" netlify>
+          <label for="bookhouse-name"><input id="bookhouse-name" type="text" placeholder="Name" name="bookhouse-name" class="form-size"></label>
+          <label for="bookhouse-emil"><input id="bookhouse-email" type="email" placeholder="E-mail" name="bookhouse-email" class="form-size"></label><br>
+          <label class="bookhouse-date" for="bookhouse-date"><h2>Birthday</h2><input type="date" name="bookhouse-date" placeholder="Birthday" class="form-size" onfocus="(this.type='date')" onblur="(this.type='text')"></label>
         </form>
         <div>
         <p>Our Mission is to Empower the next generation with confidence, community, and the ability to follow their dreams.
@@ -88,18 +88,15 @@
           Items needed for education: Books, Electronics, Trade tools, and tutoring.</p>
         </div>
         </section>
-        <form action="/action_page.php" method="post" netlify>
-          <textarea class="mobile-bookhouse" name="comments" id="comments" rows="14"></textarea>
-        </form>
     </div>
 
     <section>
-      <form class="recource-right" action="/action_page.php" method="post" netlify>
+      <form class="recource-right" method="post" netlify>
         <div class="form-two">
           <label for="grade-job"><input class="area-one" id="grade-job" type="text" placeholder="Grade/Job"></label>
-          <label for="parent-gaurdian"><input class="area-two" id="parent-gaurdian" type="text" placeholder="Parent/Guardian"></label>
+          <label for="parent-gaurdian-name"><input class="area-two" name="parent-gaurdian-name" id="parent-gaurdian-name" type="text" placeholder="Parent/Guardian"></label>
         </div>
-          <label for="address"><input class="area-three" id="address" type="address" placeholder="Mailing Address for books and tools"></label>
+          <label for="bookhouse-address"><input class="area-three" id="bookhouse-address" type="address" placeholder="Mailing Address for books and tools" name="bookhouse-address"></label>
         <div class="form-two">
           <label for="phone-number">
             <input class="area-four" id="phone-number" 
@@ -113,11 +110,11 @@
             class="area-five" 
             id="book-tool-class" 
             type="text"
-            placeholder="Book, Tool, Class"
-            >
+            placeholder="Book, Tool, Class">
           </label>  
         </div>
-        <textarea class="desktop-bookhouse" name="comments" id="comments" rows="14"></textarea>
+        <textarea class="desktop-bookhouse" name="bookhouse-comments" id="bookhouse-comments" rows="14"></textarea>
+        <button class="contact-button" name="bookhouse-submit">Submit</button>
       </form>
     </section>
   </div>
