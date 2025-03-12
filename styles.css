@@ -1004,3 +1004,18 @@ footer {
   color: #a9a9a9;
   padding-top: 10px;
 }
+
+/*upcoming events*/
+
+.upcoming-flyer {
+  display: flex;
+  flex-direction: column;
+}
+
+.upcoming-flyer h2 {
+  font-size: 15vh;
+  color: black;
+  font-family: 'Atlassian Sans';
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
