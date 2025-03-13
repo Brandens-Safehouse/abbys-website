@@ -68,13 +68,14 @@
   <div class="header-layout">
   <h1 class="support-header">SUPPORT</h1>
     <section class="form-details">
-      <form action="/support.php" class="form-style" method="post">
+      <form class="form-style" method="post" name="supportForm" netlify data-netlify="true">
+        <input type="hidden" name="form-name" value="supportForm">
         <label class="support-labels" for="support-name">Name<input class="support-input" id="support-name" type="text" placeholder="Olivia"></label>
         <label class="support-labels" for="support-volunteer">Volunteer or Network<input class="support-input" id="support-volunteer" type="text" placeholder="Wilson"></label>
         <label class="support-labels" for="support-email">Email address*<input class="support-input" id="support-email" type="email" placeholder="hello@reallygreatsite.com"></label>
         <label class="support-labels" for="support-organization">Service Type/Organization<input class="support-input" id="support-organization" type="text"></label>
       </form>
-      <form action="/action_page.php" method="post">
+      <form name="supportForm" method="post" netlify data-netlify="true">
         <label class="support-labels" for="messages">Messages*</label><input class="support-input support-message" type="text" placeholder="Type your message here">
         <button class="support-submit">Submit</button>
       </form>
