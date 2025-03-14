@@ -531,16 +531,31 @@ display: flex;
   background-image: linear-gradient(-1deg, #ffc775, #f1974d, #ffc775,#f1974d, transparent);
   padding: 40px;
 }
+.eml {grid-area: eml;}
+.name{grid-area: name;}
+.vol{grid-area: vol;}
+.msg{grid-area: msg;}
+.serv{grid-area: serv;}
+.sub{grid-area: sub;}
 
 .form-style {
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "name vol"
+  "eml serv"
+  "msg msg"
+  ". sub"
+  ;
   gap: 30px;
 }
 
 .support-labels {
   font-size: 20px;
   font-family: monospace;
+}
+
+.support-form-messages {
+
 }
 
 .support-input {
