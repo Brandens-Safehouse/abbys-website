@@ -60,6 +60,7 @@
     </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+
   <div class="signup">
     <div class="bookhouse-label">
       <h3>Branden's Bookhouse</h3>
@@ -92,34 +93,20 @@
         </section>
     </div>
     <section>
+      <form class="recource-left" name="bookhouseFormtwo" method="post" netlify data-netlify="true">
         <div class="form-two">
-          <form class="recource-left" name="bookhouseFormtwo" method="post" netlify data-netlify="true"></form>
           <input type="hidden" name="form-name" value="bookhouseFormtwo">
           <label for="grade-job"><input class="area-one" id="grade-job" type="text" name="grade-job" placeholder="Grade/Job"></label>
           <label for="parent-gaurdian-name"><input class="area-two" name="parent-gaurdian-name" id="parent-gaurdian-name" type="text" placeholder="Parent/Guardian"></label>
         </div>
           <label for="bookhouse-address"><input class="area-three" id="bookhouse-address" type="address" placeholder="Mailing Address for books and tools" name="bookhouse-address"></label>
         <div class="form-two">
-          <label for="bookhouse-phone-number">
-            <input class="area-four" id="phone-number" 
-              type="tel" 
-              placeholder="Phone #"
-              pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-              type="text"
-              name="bookhouse-phone-number">
-          </label>
-          <label for="book-tool-class">
-            <input 
-            class="area-five" 
-            id="book-tool-class" 
-            type="text"
-            placeholder="Book, Tool, Class"
-            name="book-tool-class">
-          </label>  
+          <label for="bookhouse-phone-number"><input class="area-four" id="phone-number" type="tel" placeholder="Phone #" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" type="text" name="bookhouse-phone-number"></label>
+          <label for="book-tool-class"><input class="area-five" id="book-tool-class" type="text" placeholder="Book, Tool, Class" name="book-tool-class"></label>  
         </div>
         <textarea class="desktop-bookhouse" name="bookhouse-comments" id="bookhouse-comments" rows="14"></textarea>
         <button class="contact-button">Submit</button>
-        </form>
+      </form>
     </section>
   </div>
 </form>
