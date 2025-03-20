@@ -309,9 +309,8 @@ display: flex;
 
 
 .form-two {
-  display: grid;
+  display: flex;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
 }
 
 .mobile-bookhouse {
