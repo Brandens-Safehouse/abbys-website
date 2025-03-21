@@ -445,6 +445,44 @@ display: flex;
   margin-bottom: auto;
 }
 
+.past-events-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 10vh;
+}
+
+.past-htwo {
+  padding: 5vh 0px;
+  font-size: 3vw;
+}
+
+.past-image-vertical {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: stretch;
+  gap: 3px;
+}
+
+.first-day-spa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
+}
+
+.flyer-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 5vh;
+}
+
+.school-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+
 /*Support*/
 
 .support-nav-color {
@@ -551,10 +589,6 @@ display: flex;
 .support-labels {
   font-size: 20px;
   font-family: monospace;
-}
-
-.support-form-messages {
-
 }
 
 .support-input {
