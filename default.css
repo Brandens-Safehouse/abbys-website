@@ -340,6 +340,23 @@ input, textarea {
     grid-template-columns: 1fr 1fr;
   }
 
+  .support-nav-color {
+    display: flex;
+    align-self: center;
+  }
+
+  
+  .upcoming-flyer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
+  }
+
+  .upcoming-flyer h2 {
+    font-size: 40px;
+  }
+
 }
 
 @media all and (max-width: 768px) {
@@ -533,6 +550,15 @@ input, textarea {
   flex-direction: column;
   gap: 4vh;
 }
+
+/* Upcoming Events */
+
+  .upcoming-flyer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+  }
 
 }
 
