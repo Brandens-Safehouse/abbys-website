@@ -1112,6 +1112,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  max-width: 45vw;
 }
 
 .upcoming-flyer h2 {
