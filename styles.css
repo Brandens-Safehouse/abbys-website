@@ -237,7 +237,6 @@ button a h2:hover {
   font-size: 25px;
   font-weight: 500;
   padding-top: 50px;
- 
 }
 
 /*Brandons-bookhouse css*/
@@ -401,12 +400,16 @@ display: flex;
   flex-direction: row;
   margin-top: 5%;
   gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .past-section {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .backpack, .two-women, .video {
@@ -450,15 +453,11 @@ display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 30px;
+  flex-direction: column;
 }
 
 .past-events-layout-two {
-  align-items: baseline;
-}
-
-.slideshowLayout {
-  display: flex;
-  flex-flow: column wrap;
+  align-items: center;
 }
 
 .past-htwo {
@@ -467,9 +466,13 @@ display: flex;
 }
 
 .past-image-vertical {
-  max-width: 370px;
+  max-width: 35vw;
   position: relative;
-  margin: auto;
+}
+
+.past-image-vertical-one {
+  max-width: 35vw;
+    position: relative;
 }
 
 .wide-image {
@@ -477,8 +480,27 @@ display: flex;
   margin: auto 0;
 }
 
+.sponsor-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sponsor-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.b2s-layout {
+  margin: 0;
+}
+
 /* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3, .mySlides4{
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6{
   display: none;
 }
 
@@ -533,6 +555,12 @@ img {vertical-align: middle;}
 .image-size {
     display: flex;
     flex: 1;
+}
+
+.img-back {
+  background-color: #412e4a;
+  height: 500px;
+  width: auto;
 }
 
 /*Support*/
