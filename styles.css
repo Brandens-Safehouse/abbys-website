@@ -503,6 +503,19 @@ display: flex;
   margin: 0;
 }
 
+.b2s-img-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 50vw;
+}
+
+.sponsornames {
+  flex: 1;
+}
+
 /* Hide the images by default */
 .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6{
   display: none;
@@ -1109,7 +1122,7 @@ margin-right: 25px;
 /*footer*/
 
 footer {
-  background-image: linear-gradient(48deg, black, #00000082);
+
   margin-top: auto;
 }
 
@@ -1119,7 +1132,6 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 15px 10px;
-  background-image: linear-gradient(48deg, black, #00000082);
 }
 
 .footer-container hr {

@@ -102,13 +102,6 @@ input, textarea {
 }
 
 @media all and (max-width: 1620px) {
-  /*index page*/
-  .index-container {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-  }
-
   .vision-squares a h2 {
     font-size: 35px;
   }
