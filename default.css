@@ -530,6 +530,10 @@ input, textarea {
   flex-direction: column;
 }
 
+.sponsor-layout {
+  flex-direction: column;
+}
+
 /*Support*/
 
 .form-style {
