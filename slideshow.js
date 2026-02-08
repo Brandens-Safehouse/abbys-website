@@ -1,6 +1,6 @@
   // 1. Tracks the current slide for each of your 6 slideshows
   // Index:          0, 1, 2, 3, 4, 5
-  let slideIndex = [1, 1, 1, 1, 1, 1]; 
+  let slideIndex = [1, 1, 1, 1, 1, 1,1]; 
 
   // 2. These are the exact class names used in your HTML
   let slideId = [
@@ -9,7 +9,8 @@
     "mySlides3", // Index 2 (Cookies & Crafts)
     "mySlides4", // Index 3 (Fostercare)
     "mySlides5", // Index 4 (Military Spa)
-    "mySlides6"  // Index 5 (Festivals)
+    "mySlides6",
+    "mySlides7" // Index 5 (Festivals)
   ]; 
 
   // 3. Initialize all 6 slideshows when the page loads
