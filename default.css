@@ -286,6 +286,14 @@ input, textarea {
     align-items: center;
     justify-content: center;
   }
+
+  .past-image-vertical {
+    max-width: 100%;
+  }
+
+  .past-image-vertical-one {
+    max-width: 100%;
+  }
   
 
   /*Donate*/ 
