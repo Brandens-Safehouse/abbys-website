@@ -155,8 +155,8 @@
         <div class="numbertext"></div>
         <img src="/images/2025 Military Youth Day Spa/NWTQ8742.JPEG" alt="mil-seventeen">
       </div>
-          <a class="prev" onclick="flightSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="flightSlides(1, 0)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
           <br>
     </div>
     <div class="sponsor-names">
@@ -413,8 +413,8 @@
             <div class="numbertext">8/8</div>
             <img src="/images/Holiday kids day spa/IMG_6915.jpg" alt="cook-eight">       
           </div>
-          <a class="prev" onclick="flusSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="flusSlides(1, 0)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
         </div>
         <br>
       </div>
@@ -456,8 +456,8 @@
           <div class="numbertext">5/5</div>
           <img src="/images/first kids day spa/IMG_4058.jpg" alt="first-four">       
         </div>
-        <a class="prev" onclick="flusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="flusSlides(1, 1)">&#10095;</a>  
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>  
      
       </div>
       <div class="sponsor-names">
@@ -527,8 +527,8 @@
         <div class="numbertext">12/12</div>
         <img src="/images/Festivals and Event Participation/BFJM3934.JPG" alt="fest-twelve">
       </div>
-          <a class="prev" onclick="flightSlides(-1, 1)">&#10094;</a>
-          <a class="next" onclick="flightSlides(1, 1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
         <br>
     </div>
     <div class="sponsor-names">
@@ -554,87 +554,62 @@
 
 
 
-<body>
     <script src="https://kit.fontawesome.com/3f6e3b3cfe.js" crossorigin="anonymous"></script>
-    <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-    </script>
 <script>
-let slideIndex = [1,1];
-/* Class the members of each slideshow group with different CSS classes */
-let slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+  // 1. Tracks the current slide for each of your 6 slideshows
+  // Index:          0, 1, 2, 3, 4, 5
+  let slideIndex = [1, 1, 1, 1, 1, 1]; 
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
+  // 2. These are the exact class names used in your HTML
+  let slideId = [
+    "mySlides1", // Index 0 (Back2School)
+    "mySlides2", // Index 1 (Holiday Spa)
+    "mySlides3", // Index 2 (Cookies & Crafts)
+    "mySlides4", // Index 3 (Fostercare)
+    "mySlides5", // Index 4 (Military Spa)
+    "mySlides6"  // Index 5 (Festivals)
+  ]; 
 
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  // 3. Initialize all 6 slideshows when the page loads
+  for (let i = 0; i < slideId.length; i++) {
+    showSlides(1, i);
   }
-  x[slideIndex[no]-1].style.display = "block";
-}
-</script>
 
-<script>
-let glideIndex = [1,1];
-/* Class the members of each slideshow group with different CSS classes */
-let glideId = ["mySlides3", "mySlides4"]
-khowSlides(1, 0);
-khowSlides(1, 1);
-
-function flusSlides(n, no) {
-  khowSlides(glideIndex[no] += n, no);
-}
-
-function khowSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(glideId[no]);
-  if (n > x.length) {glideIndex[no] = 1}
-  if (n < 1) {glideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  // 4. The function called by your Prev/Next buttons
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
   }
-  x[glideIndex[no]-1].style.display = "block";
-}
 
-</script>
+  // 5. The core logic to hide/show images
+  function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    
+    // Safety check: if class doesn't exist, stop
+    if (x.length === 0) return; 
 
-<script>
-let flyIndex = [1,1];
-/* Class the members of each slideshow group with different CSS classes */
-let flyId = ["mySlides5", "mySlides6"]
-flySlides(1, 0);
-flySlides(1, 1);
-
-function flightSlides(n, no) {
-  flySlides(flyIndex[no] += n, no);
-}
-
-function flySlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(flyId[no]);
-  if (n > x.length) {flyIndex[no] = 1}
-  if (n < 1) {flyIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    // Wrap around logic: go to first slide from last, or last from first
+    if (n > x.length) { slideIndex[no] = 1; }    
+    if (n < 1) { slideIndex[no] = x.length; }
+    
+    // Hide all images in this specific slideshow group
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    
+    // Show the current active image
+    x[slideIndex[no]-1].style.display = "block";  
   }
-  x[flyIndex[no]-1].style.display = "block";
-}
 
+  // Your existing Navigation Toggle function
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 </script>
 
 
