@@ -292,9 +292,16 @@ input, textarea {
   }
 
   .past-image-vertical-one {
-    max-width: 50%;
+    max-width: 100%;
   }
   
+  .video {
+    max-width: 50%;
+  }
+
+  .past-htwo {
+    font-size: 90vw;
+  }
 
   /*Donate*/ 
 
