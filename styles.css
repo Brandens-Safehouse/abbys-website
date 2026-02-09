@@ -432,6 +432,13 @@ display: flex;
   margin-bottom: 50px;
 }
 
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
 .backpack {
   width: 75%;
   margin-top: 21%;
