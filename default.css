@@ -75,10 +75,6 @@ input, textarea {
   margin-right: auto;
 }
 
-@media all and (max-width: 2520px) {
-  /*sponsorship*/
-}
-
 @media all and (max-width: 2100px) {
   /*Donate*/
   .text-items, .text-items-one {
