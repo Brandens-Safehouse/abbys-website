@@ -366,6 +366,10 @@ input, textarea {
     display: none;
   }
 
+  a.event-font {
+    font-size: 17px;
+  }
+
   .topnav {
     display: block;
     overflow: visible;
