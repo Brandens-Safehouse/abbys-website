@@ -523,7 +523,7 @@ display: flex;
 }
 
 /* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7{
+.mySlides0, .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {
   display: none;
 }
 
@@ -1185,4 +1185,80 @@ footer {
   font-family: 'Atlassian Sans';
   margin-top: 30px;
   margin-bottom: 60px;
+}
+
+.video {
+  width: 100%;
+  max-width: 800px; /* Limits giant desktop display blowout */
+  margin: 0 auto;   /* Perfectly centers the frame box horizontally */
+}
+
+/* 2. Maintain a strict 16:9 widescreen aspect ratio box on all monitors */
+.video-responsive {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* Mathematical ratio: (9 / 16) * 100 */
+  height: 0;
+}
+
+/* 3. Force the absolute YouTube iframe node to match the parent frame layout */
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* =========================================================================
+   3-COLUMN INLINE ROW FOR 2024 BACK2SCHOOL SPA
+   ========================================================================= */
+
+/* 1. Turn the parent container into a horizontal flex row spanning full width */
+.b2s-three-column-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* 2. Proportional layout sizing rules for all three side-by-side items */
+.b2s-col-slideshow {
+  flex: 1 !important;
+  max-width: 33% !important;
+}
+
+.b2s-col-video {
+  flex: 1.2 !important;
+  max-width: 40% !important;
+  margin: 0 !important;
+}
+
+.b2s-col-sponsors {
+  flex: 0.8 !important;
+  max-width: 27% !important;
+  margin: 0 !important;
+  text-align: center;
+}
+
+/* 3. Responsive Breakpoint: Stack them neatly into columns on tablets and mobile screens */
+@media all and (max-width: 1100px) {
+  .b2s-three-column-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .b2s-col-slideshow,
+  .b2s-col-video,
+  .b2s-col-sponsors {
+    flex: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }

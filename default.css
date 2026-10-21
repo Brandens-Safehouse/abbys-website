@@ -89,7 +89,6 @@ input, textarea {
     width: 35%;
   }
 
-
 }
 
 @media all and (max-width: 1760px) {
@@ -575,9 +574,6 @@ input, textarea {
   .facebook-footer h2 {
     font-size: 20px;
   }
+
+  
 }
-
-
-
-
-
