@@ -598,6 +598,52 @@ img {vertical-align: middle;}
   font-style: oblique;
 }
 
+.virtual-link {
+  display: flex !important; 
+  justify-content: center !important;
+  align-items: center !important;
+  
+  font-family: cursive;
+  text-decoration: none; 
+  border: 4px dotted black; 
+  padding: 8px 16px; 
+  font-weight: bolder;
+
+  /* 1. Adds a smooth transition so the shadows fade in elegantly */
+  transition: all 0.3s ease !important;
+}
+
+.virtual-link span {
+  color: black;
+  -webkit-text-fill-color: initial;
+  font-weight: bold !important; 
+
+  /* 2. Adds a smooth transition to the text layer */
+  transition: all 0.3s ease !important;
+}
+
+/* --- Hover Styles (The Gradient & Shadow Activates) --- */
+.virtual-link:hover {
+  border-color: transparent !important;
+  background-image: linear-gradient(to right, #ff0000, #000000, #0000ff) !important;
+  background-origin: border-box !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+
+  /* 3. Outer box shadow around the dotted border frame */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.virtual-link:hover span {
+  background-image: linear-gradient(to right, #ff0000, #000000, #0000ff) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+
+  /* 4. Text shadow workaround that works flawlessly with gradients */
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25)) !important;
+}
 /*Support*/
 
 .support-nav-color {
