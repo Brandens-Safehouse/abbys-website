@@ -608,6 +608,7 @@ img {vertical-align: middle;}
   border: 4px dotted black; 
   padding: 8px 16px; 
   font-weight: bolder;
+  text-align: center;
 
   /* 1. Adds a smooth transition so the shadows fade in elegantly */
   transition: all 0.3s ease !important;
