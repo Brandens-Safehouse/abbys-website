@@ -603,7 +603,7 @@ img {vertical-align: middle;}
   justify-content: center !important;
   align-items: center !important;
   
-  font-family: cursive;
+  font-family: 'Atlassian Sans';
   text-decoration: none; 
   border: 4px dotted black; 
   padding: 8px 16px; 
